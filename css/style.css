@@ -14,7 +14,7 @@ header {
     display: flexbox;
     padding: 10px 20px; /* Aumente o espaçamento para melhor exibição das bordas arredondadas */
     margin: 0;
-    border-radius: 50px; /* Adicione bordas arredondadas */
+    
 }
 
 h1 {
