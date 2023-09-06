@@ -1,0 +1,178 @@
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E; /* Cor de fundo temática de Berserk */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkred; /* Cor de destaque temática de Berserk */
+    text-align: center;
+    padding: 20px;
+    display: flexbox;
+    padding: 10px 20px; /* Aumente o espaçamento para melhor exibição das bordas arredondadas */
+    margin: 0;
+    border-radius: 50px; /* Adicione bordas arredondadas */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;    
+}
+
+h2 {
+    text-align: justify;
+    background-color: darkred;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* menu-style.css */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    border-radius: 30px;
+  }
+
+  nav ul li {
+    display: inline;
+    padding: 5px;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    border-radius: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    border-radius:17px;
+    padding: 5px;
+
+  }
+  
+  nav ul li:hover {
+    background-color: rgb(252, 252, 252);
+    transform: scale(1.1);
+    text-decoration: underline;   
+  }
+
+
+nav a:hover {
+    border: 2px ridge darkred; /* Adicione uma borda quando o mouse estiver sobre o link */
+    color: darkred; /* Altere a cor do texto quando o mouse estiver sobre o link */
+    transition: linear;
+    text-decoration: line-through;
+    margin: 5px;
+}
+
+/* Estilos para os botões do menu */
+.menu-button {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
+}
+
+.menu-button:hover {
+    background-color: #ffffff;
+    color: darkred;
+    font-size: large;
+    text-decoration: line-through   ;
+}
+
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    border-color: darkred;
+}
+
+section {
+    background-color: #333;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Isso define a altura da seção para preencher a tela verticalmente */
+    border-radius: 30px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 230px;
+}
+
+section p {
+    margin-top: 20px;
+    max-width: 800px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+section h2 {
+    color: #ffffff;
+}
+
+section a {
+    display: block;
+    text-align: center;
+    background-color: #BF0B00;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+/* Estilos para telas menores (máximo 768px de largura) */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section p {
+        padding: 0 20px;
+    }
+}
+
+/* Estilos para telas muito pequenas (máximo 480px de largura) */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
+/* Outros estilos personalizados podem ser adicionados aqui */
