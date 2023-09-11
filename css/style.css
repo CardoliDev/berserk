@@ -52,21 +52,25 @@ nav ul {
   }
   
   nav ul li a {
-    text-decoration: none;
-    color: rgb(252, 252, 252);
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    border-radius:17px;
-    padding: 5px;
+    padding: 10px 20px;
+    display: flex;
+    background-color: darkred;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif, Times, serif;
 
   }
-  
-  nav ul li:hover {
+
+  nav ul li a:hover {
     background-color: rgb(252, 252, 252);
     transform: scale(1.1);
     text-decoration: underline;   
   }
+  
 
 
 nav a:hover {
@@ -122,7 +126,7 @@ section img {
     max-width: 100%;
     height: auto;
     margin: auto;
-    border-radius: 230px;
+    border-radius: 400px;
 }
 
 section p {
@@ -133,6 +137,7 @@ section p {
 }
 
 section h2 {
+
     color: #ffffff;
 }
 
@@ -147,14 +152,21 @@ section a {
     border-radius: 5px;
 }
 
+section a:hover {
+    background-color: #ffffff;
+    color: darkred;
+    font-size: large;
+    text-decoration: line-through   ;
+}
+
 footer {
     text-align: center;
     padding: 20px;
 }
 
 /* Responsividade */
-/* Estilos para telas menores (máximo 768px de largura) */
-@media screen and (max-width: 768px) {
+/* Estilos para telas menores (máximo 670px de largura) */
+@media screen and (max-width: 670px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -166,13 +178,18 @@ footer {
 }
 
 /* Estilos para telas muito pequenas (máximo 480px de largura) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
     header h1 {
         font-size: 24px;
     }
-
+   
     section p {
         font-size: 14px;
     }
 }
+
+
+
+
+
 /* Outros estilos personalizados podem ser adicionados aqui */

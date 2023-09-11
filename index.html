@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Arcos de Berserk</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Berserk Fã Site</h1>
     </header>
-        <nav>
-            <ul class="nav-buttons">
-                <li><button class="menu-button" onclick="navigateTo('arcos/arco1.html')">O Espadachim Negro</button></li>
-                <li><button class="menu-button" onclick="navigateTo('arcos/arco2.html')">Era de Ouro</button></li>
-                <li><button class="menu-button" onclick="navigateTo('arcos/arco3.html')">Torre da Convicção</button></li>
-                <li><button class="menu-button" onclick="navigateTo('arcos/arco4.html')">Falcão Milenar</button></li>
-                <li><button class="menu-button" onclick="navigateTo('arcos/arco5.html')">Fantasia</button></li>
-                <!-- Adicione mais itens de menu conforme necessário -->
-            </ul>
-        </nav>
+    <nav>
+        <ul class="nav-buttons">
+            <li><button class="menu-button" onclick="navigateTo('arcos/arco1.html')">O Espadachim Negro</button></li>
+            <li><button class="menu-button" onclick="navigateTo('arcos/arco2.html')">Era de Ouro</button></li>
+            <li><button class="menu-button" onclick="navigateTo('arcos/arco3.html')">Torre da Convicção</button></li>
+            <li><button class="menu-button" onclick="navigateTo('arcos/arco4.html')">Falcão Milenar</button></li>
+            <li><button class="menu-button" onclick="navigateTo('arcos/arco5.html')">Fantasia</button></li>
+            <!-- Adicione mais itens de menu conforme necessário -->
+        </ul>
+    </nav>
     <main>
         <section>
-            <img src="imagens/Berserk.jpg" alt="Capa Mangá Berserk">
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/Berserk-pequeno.jpg">
+                <img src="imagens/Berserk.jpg" alt="Capa Mangá Berserk">
+            </picture>
             <p>
                 Berserk (ベルセルク Beruseruku?) é uma série de mangá escrita e ilustrada por Kentaro Miura. Situado em um mundo de fantasia sombria inspirado na Europa medieval, a história gira em torno de Guts, um solitário mercenário, e Griffith, o líder de um bando de mercenários chamado de "Bando do Falcão". Miura publicou um one-shot de Berserk em 1988. A série começou a ter os seus capítulos publicados no ano seguinte na agora extinta revista Monthly Animal House, que foi substituída em 1992 pela revista bimestral Young Animal, onde Berserk continua a ser serializado intermitentemente. Miura faleceu em maio de 2021, o capítulo final que ele escreveu e ilustrou foi publicado postumamente em setembro do mesmo ano; a série foi retomada em junho de 2022, sob a supervisão do colega e amigo de infância de Miura, Kouji Mori, e do grupo de assistentes e aprendizes de Miura do Studio Gaga.
 
@@ -40,6 +44,5 @@
         <p>&copy; 2023 Seu Nome</p>
     </footer>
     <script src="js/menu.js"></script>
-
 </body>
 </html>
