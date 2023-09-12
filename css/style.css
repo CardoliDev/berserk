@@ -142,6 +142,8 @@ section p {
     max-width: 800px;
     color: #FFFFFF;
     text-align: justify;
+    white-space: nowrap; /* Evite quebras de linha no texto */
+
 }
 
 section h2 {
@@ -257,37 +259,18 @@ section{
             display: none;
      
         }
-    }
-
-    @media screen and (max-width: 600px) {
-        p {
-            font-size: 15px; /* Reduza o tamanho da fonte para telas menores */
-            padding: 0px; /* Reduza o espaçamento interno para telas menores */
-        }
-    }
-    
-    @media screen and (max-width: 600px) {
-        main {
-            display:flex;
-            padding: 0px auto;
-            
-            justify-content: space-around;
-
-        }
-
-        section p{
-            padding: 0%;
-            text-align: justify;
-            font-size: 12px;
-
-        }
-
-
 
     }
 
+    @media screen and (max-height: 650px) {
+        /* Esconda a imagem quando a altura da tela for igual ou menor que 600px */
+        img {
+            display: none;
+     
+        }
 
+    }
 
-/* Estilos para telas muito pequenas (máximo 480px de largura) */
+   
 
 
