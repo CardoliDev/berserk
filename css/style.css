@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1E1E1E; /* Cor de fundo temática de Berserk */
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
+    justify-content: space-around;
+
 }
 
 header {
@@ -19,7 +21,10 @@ header {
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;    
+    font-size: 40px;   
+    display: block;
+    justify-content: space-around; 
+    text-align: center;
 }
 
 h2 {
@@ -107,6 +112,8 @@ main {
     margin: auto;
     padding: 50px;
     border-color: darkred;
+    display: flex;
+    justify-content: space-around;
 }
 
 section {
@@ -208,8 +215,14 @@ footer {
     text-decoration: line-through   ;  
 }
 /* Responsividade */
+section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 
-@media screen and (max-width: 670px) {
+}
+
+@media screen and (max-width: 780px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -237,6 +250,43 @@ footer {
     }
 
 }
+
+    @media screen and (max-height: 600px) {
+        /* Esconda a imagem quando a altura da tela for igual ou menor que 600px */
+        img {
+            display: none;
+     
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        p {
+            font-size: 15px; /* Reduza o tamanho da fonte para telas menores */
+            padding: 0px; /* Reduza o espaçamento interno para telas menores */
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        main {
+            display:flex;
+            padding: 0px auto;
+            
+            justify-content: space-around;
+
+        }
+
+        section p{
+            padding: 0%;
+            text-align: justify;
+            font-size: 12px;
+
+        }
+
+
+
+    }
+
+
 
 /* Estilos para telas muito pequenas (máximo 480px de largura) */
 
