@@ -253,7 +253,7 @@ section{
 
 }
 
-    @media screen and (max-height: 600px) {
+    @media screen and (max-height: 700px) {
         /* Esconda a imagem quando a altura da tela for igual ou menor que 600px */
         img {
             display: none;
