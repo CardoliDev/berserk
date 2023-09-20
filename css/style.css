@@ -128,7 +128,7 @@ section {
 }
 
 section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: auto;
     border-radius: 400px;
@@ -219,7 +219,7 @@ section{
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (width: 780px) {
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -252,6 +252,7 @@ section{
         /* Esconda a imagem quando a altura da tela for igual ou menor que 600px */
         img {
             display: none;
+            width: 10%;
         }
 
         section p {
